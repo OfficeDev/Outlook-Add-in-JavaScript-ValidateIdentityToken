@@ -75,7 +75,7 @@ The web service uses the following steps to process the token:
 
 The service does not use the token in any way. It responds with the information contained in the token, or with an error message if the token is not valid. 
 
-This sample also requires an X.509 certificate validation function that allows the service to respond to requests that are signed with a self-signed certificate issued by the Exchange server. The Exchange server will use this self-signed certificate by default. If your Exchange server has a valid certificate that traces back to a root provider, this validation function is not required. For more information about the validation function, see  [Validating X509 Certificates for SSL over HTTP](http://msdn.microsoft.com/en-us/library/bb408523(EXCHG.80).aspx).
+This sample also requires an X.509 certificate validation function that allows the service to respond to requests that are signed with a self-signed certificate issued by the Exchange server. The Exchange server will use this self-signed certificate by default. If your Exchange server has a valid certificate that traces back to a root provider, this validation function is not required. For more information about the validation function, see  [Validating X509 Certificates for SSL over HTTP](http://msdn.microsoft.com/library/bb408523(EXCHG.80).aspx).
 
 
 <a name="build"></a>
@@ -108,9 +108,9 @@ You might encounter the following issues when you use Outlook Web App to test a 
 ## Additional resources
 
 - [Web API: The Official Microsoft ASP.NET Site](http://www.asp.net/web-api)  
-- [Validating X509 Certificates for SSL over HTTP](http://msdn.microsoft.com/en-us/library/bb408523(EXCHG.80).aspx)  
+- [Validating X509 Certificates for SSL over HTTP](http://msdn.microsoft.com/library/bb408523(EXCHG.80).aspx)  
 - [Authenticating a mail add-in by using Exchange 2013 identity tokens](http://msdn.microsoft.com/library/c0520a1e-d9ba-495a-a99f-6816d7d2a23e)  
-- [Validate an Exchange 2013 identity token](http://msdn.microsoft.com/en-us/library/office/apps/fp179819(v=office.15))  
+- [Validate an Exchange 2013 identity token](http://msdn.microsoft.com/library/office/apps/fp179819(v=office.15))  
 
 
 ## Copyright
