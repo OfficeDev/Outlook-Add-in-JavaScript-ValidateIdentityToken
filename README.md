@@ -106,7 +106,7 @@ You might encounter the following issues when you use Outlook Web App to test a 
 
 <a name="additional-resources"></a>
 ## Additional resources
-
+- [Office Add-ins](https://msdn.microsoft.com/library/office/jj220060.aspx) documentation on MSDN
 - [Web API: The Official Microsoft ASP.NET Site](http://www.asp.net/web-api)  
 - [Validating X509 Certificates for SSL over HTTP](http://msdn.microsoft.com/library/bb408523(EXCHG.80).aspx)  
 - [Authenticating a mail add-in by using Exchange 2013 identity tokens](http://msdn.microsoft.com/library/c0520a1e-d9ba-495a-a99f-6816d7d2a23e)  
