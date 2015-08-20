@@ -111,7 +111,7 @@ You might encounter the following issues when you use Outlook Web App to test a 
 - [Validating X509 Certificates for SSL over HTTP](http://msdn.microsoft.com/library/bb408523(EXCHG.80).aspx)  
 - [Authenticating a mail add-in by using Exchange 2013 identity tokens](http://msdn.microsoft.com/library/c0520a1e-d9ba-495a-a99f-6816d7d2a23e)  
 - [Validate an Exchange 2013 identity token](http://msdn.microsoft.com/library/office/apps/fp179819(v=office.15))  
-
+- [More Add-in samples](https://github.com/OfficeDev?utf8=%E2%9C%93&query=-Add-in)
 
 ## Copyright
 Copyright (c) 2015 Microsoft. All rights reserved.
