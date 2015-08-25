@@ -3,6 +3,7 @@
 */
 
 /// <reference path="../App.js" />
+
 var _mailbox;
 var _xhr;
 
@@ -39,20 +40,20 @@ var _xhr;
             var response = JSON.parse(_xhr.responseText);
 
             if (undefined == response.errorMessage) {
-                document.getElementById("msexchuid").value = response.token.msexchuid;
-                document.getElementById("amurl").value = response.token.amurl;
-                document.getElementById("uniqueID").value = response.token.uniqueID;
-                document.getElementById("aud").value = response.token.aud;
-                document.getElementById("iss").value = response.token.iss;
-                document.getElementById("x5t").value = response.token.x5t;
-                document.getElementById("nbf").value = response.token.nbf;
-                document.getElementById("exp").value = response.token.exp;
+                $("#msexchuid").val(response.token.msexchuid);
+                $("#amurl").val(response.token.amurl);
+                $("#uniqueID").val(response.token.uniqueID);
+                $("#aud").val(response.token.aud);
+                $("#iss").val(response.token.iss);
+                $("#x5t").val(response.token.x5t);
+                $("#nbf").val(response.token.nbf);
+                $("#exp").val(response.token.exp);
 
-                document.getElementById("rsp").value = _xhr.responseText;
-                document.getElementById("error").value = "Complete.";
+                $("#rsp").val(_xhr.responseText);
+                $("#error").val("none");
             }
             else {
-                document.getElementById("error").value = response.error;
+                $("#error").val(response.error);
                 app.showNotification("Error!", response.errorMessage);
             }
         }
