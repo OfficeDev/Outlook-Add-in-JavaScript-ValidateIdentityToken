@@ -20,7 +20,7 @@ This sample shows how to create a .NET Framework service that validates Exchange
 
 This sample requires the following:  
 
-  - Visual Studio 2013 with Update 5 or Visual Studio 2015. 
+  - Visual Studio 2013(Update 5) or Visual Studio 2015, with Microsoft Office Developer Tools. 
   - A computer running Exchange 2013 with at least one email account, or an Office 365 account. You can [sign up for an Office 365 Developer subscription](http://aka.ms/o365-android-connect-signup) and get an Office 365 account through it.
   - Any browser that supports ECMAScript 5.1, HTML5, and CSS3, such as Internet Explorer 9, Chrome 13, Firefox 5, Safari 5.0.6, or a later version of these browsers.
   - Microsoft.IdentityModel.dll and Microsoft.IdentityModel.Extensions.dll - You can install these from the Package Manager Console: 
@@ -82,7 +82,7 @@ This sample also requires an X.509 certificate validation function that allows t
 ## Build and debug ##
 The add-in will be activated on any email message in the user's Inbox. You can make it easier to test the add-in by sending one or more email messages to your test account before you run the sample.
 
-1. Open the solution in Visual Studio, and press F5 to build the sample. 
+1. Open the solution in Visual Studio, and press F5 to build and deploy the sample. 
 2. Connect to an Exchange account by providing the email address and password for an Exchange 2013 server, and allow the server to configure the email account.  
 3. In the browser, log on with the email account by entering the account name and password.  
 4. Select a message in the Inbox, and click **Validate Identity Token** in the add-in bar that renders above the message.  
@@ -98,10 +98,12 @@ You might encounter the following issues when you use Outlook Web App to test a 
 - The add-in bar does not appear when a message is selected. If this occurs, restart the add-in by selecting **Debug - Stop Debugging** in the Visual Studio window, then press F5 to rebuild and deploy the add-in.  
 - Changes to the JavaScript code might not be picked up when you deploy and run the add-in. If the changes are not picked up, clear the cache on the web browser by selecting **Tools - Internet options** and selecting the **Delete** button. Delete the temporary Internet files and then restart the add-in.
 
+If the add-in loads but does not run, try to build the solution in Visual Studio (**Build > Build Solution**). Check the Error List for missing dependencies and add them as needed.
+
 <a name="questions"></a>
 ## Questions and comments
 
-- If you have any trouble running this sample, please [log an issue](https://github.com/OfficeDev/Office-Add-in-JavaScript-ValidateIdentityToken/issues).
+- If you have any trouble running this sample, please [log an issue](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken/issues).
 - Questions about Office Add-in development in general should be posted to [Stack Overflow](http://stackoverflow.com/questions/tagged/office-addins). Make sure that your questions or comments are tagged with `office-addins`.
 
 <a name="additional-resources"></a>
