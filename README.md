@@ -23,9 +23,10 @@ This sample requires the following:
   - Visual Studio 2013(Update 5) or Visual Studio 2015, with Microsoft Office Developer Tools. 
   - A computer running Exchange 2013 with at least one email account, or an Office 365 account. You can [sign up for an Office 365 Developer subscription](http://aka.ms/o365-android-connect-signup) and get an Office 365 account through it.
   - Any browser that supports ECMAScript 5.1, HTML5, and CSS3, such as Internet Explorer 9, Chrome 13, Firefox 5, Safari 5.0.6, or a later version of these browsers.
-  - Microsoft.IdentityModel.dll and Microsoft.IdentityModel.Extensions.dll - You can install these from the Package Manager Console: 
+  - Microsoft.IdentityModel.dll and Microsoft.IdentityModel.Extensions.dll. You can install these from the Package Manager Console: 
 	- Install-Package Microsoft.Identity.Model.Extensions
 	- Install-Package Microsoft.Identity.Model
+  - [ASP.NET MVC 4](http://www.asp.net/mvc/mvc4).  
   - Familiarity with JavaScript programming and web services.
 
 <a name="components"></a>
