@@ -35,31 +35,31 @@ The sample solution contains the following key files:
 
 **IdentityToken** project
 
-- [```IdentityToken.xml```](IdentityToken/IdentityTokenManifest/IdentityToken.xml): The manifest file for the mail add-in for Outlook.
+- [```IdentityToken.xml```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken/blob/master/IdentityToken/IdentityTokenManifest/IdentityToken.xml): The manifest file for the mail add-in for Outlook.
 
 **IdentityTokenWeb** project
 
-- [```IdentityTokenWeb/AppRead/Home/Home.html```](IdentityTokenWeb/AppRead/Home/Home.html): The HTML user interface for the add-in.
-- [```IdentityTokenWeb/AppRead/Home/Home.js```](IdentityTokenWeb/AppRead/Home/Home.js): The logic that handles requesting and using the identity token.
+- [```IdentityTokenWeb/AppRead/Home/Home.html```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken/blob/master/IdentityTokenWeb/AppRead/Home/Home.html): The HTML user interface for the add-in.
+- [```IdentityTokenWeb/AppRead/Home/Home.js```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken/blob/master/IdentityTokenWeb/AppRead/Home/Home.js): The logic that handles requesting and using the identity token.
 
 **IdentityTokenService** project
 
-- [```IdentityTokenService/Controllers/IdentityTokenController.cs```](IdentityTokenService/Controllers/IdentityTokenController.cs): The service object that provides the business logic for the sample Web API service.
-- [```IdentityTokenService/App_Start/WebApiConfig.cs```](IdentityTokenService/App_Start/WebApiConfig.cs): Binds the default routing for the Web API service.
+- [```IdentityTokenService/Controllers/IdentityTokenController.cs```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken/blob/master/IdentityTokenService/Controllers/IdentityTokenController.cs): The service object that provides the business logic for the sample Web API service.
+- [```IdentityTokenService/App_Start/WebApiConfig.cs```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken/blob/master/IdentityTokenService/App_Start/WebApiConfig.cs): Binds the default routing for the Web API service.
 - Models folder  
 
   | File name | Description |
   |------|------|
-  | [```AuthClaimTypes.cs```](IdentityTokenService/Models/AuthClaimTypes.cs) |  The static object that provides identifiers for the parts of the client identity token. |
-  | [```AuthMetadata.cs```](IdentityTokenService/Models/AuthMetadata.cs) |  The object that represents the authentication metadata document retrieved from the location specified in the client identity token. |
-  | [```Base64UrlEncoder.cs```](IdentityTokenService/Models/Base64UrlEncoder.cs) |  The static object that decodes a URL that has been base-64 URL-encoded, as specified in RFC 4648. |
-  | [```IdentityTokenService/Models/Config.cs```](IdentityTokenService/Models/Config.cs) |  Provides string values that must be matched in the client identity token. Also provides a certificate validation callback suitable for test use. |
-  | [```DecodedJSONToken.cs```](IdentityTokenService/Models/DecodedJsonToken.cs) |  Represents a valid JSON Web Token (JWT) decoded from the base-64 URL-encoded client identity token. If the token is not valid, the constructor for the **DecodedJSONToken** object will throw an **ApplicationException** error. |
-  | [```IdentityTokenRequest.cs```](IdentityTokenService/Models/IdentityTokenRequest.cs) |  The object that represents the REST request from the add-in. | 
-  | [```IdentityTokenResponse.cs```](IdentityTokenService/Models/IdentityTokenResponse.cs) |  The object that represents the REST response from the web service. |
-  | [```IdentityToken.cs```](IdentityTokenService/Models/IdentityToken.cs) |  The object that represents the decoded and validated client identity token. |
-  | [```JsonAuthMetadataDocument.cs```](IdentityTokenService/Models/JsonAuthMetadataDocument.cs) |  The object that represents the authentication metadata document sent from the Exchange server. |
-  | [```JsonTokenDecoder.cs```](IdentityTokenService/Models/JsonTokenDecoder.cs) |  The static object that decodes the base-64 URL-encoded client identity token from the mail add-in for Outlook. |
+  | [```AuthClaimTypes.cs```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken/blob/master/IdentityTokenService/Models/AuthClaimTypes.cs) |  The static object that provides identifiers for the parts of the client identity token. |
+  | [```AuthMetadata.cs```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken/blob/master/IdentityTokenService/Models/AuthMetadata.cs) |  The object that represents the authentication metadata document retrieved from the location specified in the client identity token. |
+  | [```Base64UrlEncoder.cs```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken/blob/master/IdentityTokenService/Models/Base64UrlEncoder.cs) |  The static object that decodes a URL that has been base-64 URL-encoded, as specified in RFC 4648. |
+  | [```IdentityTokenService/Models/Config.cs```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken/blob/master/IdentityTokenService/Models/Config.cs) |  Provides string values that must be matched in the client identity token. Also provides a certificate validation callback suitable for test use. |
+  | [```DecodedJSONToken.cs```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken/blob/master/IdentityTokenService/Models/DecodedJsonToken.cs) |  Represents a valid JSON Web Token (JWT) decoded from the base-64 URL-encoded client identity token. If the token is not valid, the constructor for the **DecodedJSONToken** object will throw an **ApplicationException** error. |
+  | [```IdentityTokenRequest.cs```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken/blob/master/IdentityTokenService/Models/IdentityTokenRequest.cs) |  The object that represents the REST request from the add-in. | 
+  | [```IdentityTokenResponse.cs```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken/blob/master/IdentityTokenService/Models/IdentityTokenResponse.cs) |  The object that represents the REST response from the web service. |
+  | [```IdentityToken.cs```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken/blob/master/IdentityTokenService/Models/IdentityToken.cs) |  The object that represents the decoded and validated client identity token. |
+  | [```JsonAuthMetadataDocument.cs```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken/blob/master/IdentityTokenService/Models/JsonAuthMetadataDocument.cs) |  The object that represents the authentication metadata document sent from the Exchange server. |
+  | [```JsonTokenDecoder.cs```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken/blob/master/IdentityTokenService/Models/JsonTokenDecoder.cs) |  The static object that decodes the base-64 URL-encoded client identity token from the mail add-in for Outlook. |
 
 <a name="codedescription"></a>
 ##Description of the code
