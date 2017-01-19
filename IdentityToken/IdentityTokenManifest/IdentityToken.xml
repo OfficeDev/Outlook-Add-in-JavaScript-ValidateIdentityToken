@@ -1,12 +1,16 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
   <!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
-  <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="MailApp">
+  <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+             xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+             xsi:type="MailApp">
     <Id>46e4ce3e-f833-4242-997e-4915f9bade7d</Id>
     <Version>1.0.0.0</Version>
-    <ProviderName>[Provider name]</ProviderName>
+    <ProviderName>Microsoft</ProviderName>
     <DefaultLocale>en-US</DefaultLocale>
     <DisplayName DefaultValue="Validate Identity Token" />
     <Description DefaultValue="IdentityToken sample"/>
+    <IconUrl DefaultValue="https://appcommandicons.blob.core.windows.net/images/content_32x.png" />
     <Hosts>
       <Host Name="Mailbox" />
     </Hosts>
@@ -28,4 +32,78 @@
       <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read" />
     </Rule>
     <DisableEntityHighlighting>false</DisableEntityHighlighting>
+    <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides" xsi:type="VersionOverridesV1_0">
+
+      <Requirements>
+        <bt:Sets DefaultMinVersion="1.3">
+          <bt:Set Name="Mailbox" />
+        </bt:Sets>
+      </Requirements>
+      <Hosts>
+        <Host xsi:type="MailHost">
+
+          <DesktopFormFactor>
+            <FunctionFile resid="functionFile" />
+
+            <!-- Custom pane, only applies to read form -->
+            <ExtensionPoint xsi:type="CustomPane">
+              <RequestedHeight>100</RequestedHeight>
+              <SourceLocation resid="customPaneUrl" />
+              <Rule xsi:type="RuleCollection" Mode="Or">
+                <Rule xsi:type="ItemIs" ItemType="Message" />
+              </Rule>
+            </ExtensionPoint>
+
+            <!-- Message read form -->
+            <ExtensionPoint xsi:type="MessageReadCommandSurface">
+              <OfficeTab id="TabDefault">
+                <Group id="msgReadDemoGroup">
+                  <Label resid="groupLabel" />
+                  <!-- Task pane button -->
+                  <Control xsi:type="Button" id="msgReadOpenPaneButton">
+                    <Label resid="paneReadButtonLabel" />
+                    <Supertip>
+                      <Title resid="paneReadSuperTipTitle" />
+                      <Description resid="paneReadSuperTipDescription" />
+                    </Supertip>
+                    <Icon>
+                      <bt:Image size="16" resid="green-icon-16" />
+                      <bt:Image size="32" resid="green-icon-32" />
+                      <bt:Image size="80" resid="green-icon-80" />
+                    </Icon>
+                    <Action xsi:type="ShowTaskpane">
+                      <SourceLocation resid="readTaskPaneUrl" />
+                    </Action>
+                  </Control>
+                </Group>
+              </OfficeTab>
+            </ExtensionPoint>
+          </DesktopFormFactor>
+        </Host>
+      </Hosts>
+
+      <Resources>
+        <bt:Images>
+          <!-- Green icon -->
+          <bt:Image id="green-icon-16" DefaultValue="https://appcommandicons.blob.core.windows.net/images/content_16x.png" />
+          <bt:Image id="green-icon-32" DefaultValue="https://appcommandicons.blob.core.windows.net/images/content_32x.png" />
+          <bt:Image id="green-icon-80" DefaultValue="https://appcommandicons.blob.core.windows.net/images/content_80x.png" />
+        </bt:Images>
+        <bt:Urls>
+          <bt:Url id="readTaskPaneUrl" DefaultValue="~remoteAppUrl/AppRead/Home/Home.html" />
+          <bt:Url id="customPaneUrl" DefaultValue="~remoteAppUrl/AppRead/Home/Home.html" />
+        </bt:Urls>
+        <bt:ShortStrings>
+          <bt:String id="groupLabel" DefaultValue="Identity Token Sample" />
+
+          <!-- Read mode -->
+          <bt:String id="paneReadButtonLabel" DefaultValue="Validate Identity Token" />
+          <bt:String id="paneReadSuperTipTitle" DefaultValue="Validate Exchange Identity Token" />
+        </bt:ShortStrings>
+        <bt:LongStrings>
+          <!-- Read mode -->
+          <bt:String id="paneReadSuperTipDescription" DefaultValue="Your add-in loaded successfully. Click here to validate the exchange identity token." />
+        </bt:LongStrings>
+      </Resources>
+    </VersionOverrides>
   </OfficeApp>
