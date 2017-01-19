@@ -25,8 +25,8 @@ This sample requires the following:
   - Any browser that supports ECMAScript 5.1, HTML5, and CSS3, such as Internet Explorer 9, Chrome 13, Firefox 5, Safari 5.0.6, or a later version of these browsers.
   - Microsoft.IdentityModel.dll and Microsoft.IdentityModel.Extensions.dll. You can install these from the Package Manager Console: 
 	- Install-Package Microsoft.Identity.Model.Extensions
-	- Install-Package Microsoft.Identity.Model
-  - [ASP.NET MVC 4](http://www.asp.net/mvc/mvc4).  
+	- Install-Package Microsoft.IdentityModel
+  - [ASP.NET MVC 4](http://www.asp.net/mvc/mvc4). You can also install this with nuget using the command `Install-Package Microsoft.AspNET.MVC`.
   - Familiarity with JavaScript programming and web services.
 
 <a name="components"></a>
@@ -98,6 +98,7 @@ You might encounter the following issues when you use Outlook Web App to test a 
 
 - The add-in bar does not appear when a message is selected. If this occurs, restart the add-in by selecting **Debug - Stop Debugging** in the Visual Studio window, then press F5 to rebuild and deploy the add-in.  
 - Changes to the JavaScript code might not be picked up when you deploy and run the add-in. If the changes are not picked up, clear the cache on the web browser by selecting **Tools - Internet options** and selecting the **Delete** button. Delete the temporary Internet files and then restart the add-in.
+- If you don't see reference to System.Web.Mvc listed under References, make sure you add it.
 
 If the add-in loads but does not run, try to build the solution in Visual Studio (**Build > Build Solution**). Check the Error List for missing dependencies and add them as needed.
 
