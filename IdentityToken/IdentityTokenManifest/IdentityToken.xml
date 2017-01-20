@@ -44,16 +44,6 @@
 
           <DesktopFormFactor>
             <FunctionFile resid="functionFile" />
-
-            <!-- Custom pane, only applies to read form -->
-            <ExtensionPoint xsi:type="CustomPane">
-              <RequestedHeight>100</RequestedHeight>
-              <SourceLocation resid="customPaneUrl" />
-              <Rule xsi:type="RuleCollection" Mode="Or">
-                <Rule xsi:type="ItemIs" ItemType="Message" />
-              </Rule>
-            </ExtensionPoint>
-
             <!-- Message read form -->
             <ExtensionPoint xsi:type="MessageReadCommandSurface">
               <OfficeTab id="TabDefault">
