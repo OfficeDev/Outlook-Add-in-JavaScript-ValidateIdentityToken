@@ -1,8 +1,8 @@
 # Outlook Add-in: Validate a client identity token using the .NET Framework
+This sample shows how to create a .NET Framework service that validates Exchange client identity tokens
 
 **Table of contents**
 
-* [Summary](#summary)
 * [Prerequisites](#prerequisites)
 * [Key components of the sample](#components)
 * [Description of the code](#codedescription)
@@ -11,9 +11,6 @@
 * [Questions and comments](#questions)
 * [Additional resources](#additional-resources)
 
-<a name="summary"></a>
-##Summary
-This sample shows how to create a .NET Framework service that validates Exchange client identity tokens.
 
 <a name="prerequisites"></a>
 ## Prerequisites ##
@@ -62,7 +59,7 @@ The sample solution contains the following key files:
   | [```JsonTokenDecoder.cs```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-ValidateIdentityToken/blob/master/IdentityTokenService/Models/JsonTokenDecoder.cs) |  The static object that decodes the base-64 URL-encoded client identity token from the mail add-in for Outlook. |
 
 <a name="codedescription"></a>
-##Description of the code
+## Description of the code
 This sample shows you how to create a .NET Framework service that validates an Exchange client access token. The Exchange server issues a token that is unique to the mailbox on the server. You can use this token to associate a mailbox with services that you provide to a mail add-in for Outlook.
 
 The sample is divided into two parts:  
@@ -80,7 +77,7 @@ This sample also requires an X.509 certificate validation function that allows t
 
 
 <a name="build"></a>
-## Build and debug ##
+## Build and debug
 The add-in will be activated on any email message in the user's Inbox. You can make it easier to test the add-in by sending one or more email messages to your test account before you run the sample.
 
 1. Open the solution in Visual Studio, and press F5 to build and deploy the sample. 
@@ -89,7 +86,7 @@ The add-in will be activated on any email message in the user's Inbox. You can m
 4. Select a message in the Inbox, and click **Validate Identity Token** in the add-in bar that renders above the message.  
    The add-in loads and displays the contents of the client identity token.
    
->If you're running the sample on an Exchange server that's using the default self-signed certificate, you'll get a certificate error when the web browser opens. After you verify that the browser is opening the correct URL by looking at the web address, select **Continue to this Web site** to start Outlook Web App.
+>**Note:** If you're running the sample on an Exchange server that's using the default self-signed certificate, you'll get a certificate error when the web browser opens. After you verify that the browser is opening the correct URL by looking at the web address, select **Continue to this Web site** to start Outlook.
 
 
 <a name="troubleshooting"></a>
