@@ -1,0 +1,19 @@
+### YamlMime:Sample
+sample:
+- name: 'Outlook add-in: Validate a client identity token using the .NET Framework'
+  path: ''
+  description: Shows how to create a .NET Framework service that validates Exchange client identity tokens.
+  readme: ''
+  generateZip: FALSE
+  isLive: TRUE
+  technologies:
+  - Office Add-in
+  azureDeploy: ''
+  author: jamescro
+  platforms: []
+  languages:
+  - JavaScript
+  extensions:
+    products:
+    - Outlook
+    scenarios: []
