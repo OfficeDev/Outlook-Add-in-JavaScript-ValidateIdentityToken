@@ -1,3 +1,16 @@
+---
+topic: sample
+products:
+- Outlook
+- Office 365
+languages:
+- JavaScript
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  createdDate: 8/13/2015 3:58:49 PM
+---
 # Outlook Add-in: Validate a client identity token using the .NET Framework
 
 **Table of contents**
