@@ -5,6 +5,7 @@ products:
 - office-365
 languages:
 - javascript
+description: This sample shows how to create a .NET Framework service that validates Exchange client identity tokens.
 extensions:
   contentType: samples
   technologies:
@@ -25,7 +26,7 @@ extensions:
 * [Additional resources](#additional-resources)
 
 <a name="summary"></a>
-##Summary
+## Summary
 This sample shows how to create a .NET Framework service that validates Exchange client identity tokens.
 
 <a name="prerequisites"></a>
