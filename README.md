@@ -5,14 +5,17 @@ products:
 - office-365
 languages:
 - javascript
+- csharp
 description: This sample shows how to create a .NET Framework service that validates Exchange client identity tokens.
 extensions:
   contentType: samples
   technologies:
   - Add-ins
   createdDate: 8/13/2015 3:58:49 PM
+urlFragment: outlook-add-in-validate-a-client-identity-token-using-the-net-framework
 ---
-# Outlook Add-in: Validate a client identity token using the .NET Framework
+
+# Outlook Add-in: Validate client identity token (.NET)
 
 **Table of contents**
 
